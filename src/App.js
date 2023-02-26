@@ -1,9 +1,12 @@
+import { YammerIcon } from '@fluentui/react-northstar';
 import React, { useState } from 'react';
 import QRCode from 'react-qr-code';
 import './App.css';
 
 function App() {
   const [urlQr, setUrlQr] = useState('https://www.tenutafontana.com/alberata');
+  const d = new Date();
+  let year = d.getFullYear();
   return (
     <div className="App" style={{ margin: '5px' }}>
       <h2>QR Code:</h2>
@@ -22,6 +25,9 @@ function App() {
           Civico 44
         </option>
         <option value="https://www.tenutafontana.com/olmo/">Olmo</option>
+        <option value="https://www.tenutafontana.com/pallagrellonero/">
+          PallagrelloNero
+        </option>
       </select>
       <div style={{ margin: '15px' }}>
         <QRCode value={urlQr} />
@@ -36,7 +42,7 @@ function App() {
 
       <div className="copyright">
         {' '}
-        <hr />© 2021 Bacetech ltd. All Rights Reserved.{' '}
+        <hr />© {year} Bacetech ltd. All Rights Reserved.{' '}
       </div>
     </div>
   );
