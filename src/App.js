@@ -1,4 +1,3 @@
-import { YammerIcon } from '@fluentui/react-northstar';
 import React, { useState } from 'react';
 import QRCode from 'react-qr-code';
 import './App.css';
@@ -26,7 +25,7 @@ function App() {
         </option>
         <option value="https://www.tenutafontana.com/olmo/">Olmo</option>
         <option value="https://www.tenutafontana.com/pallagrellonero/">
-          PallagrelloNero
+          Pallagrello Nero
         </option>
       </select>
       <div style={{ margin: '15px' }}>
